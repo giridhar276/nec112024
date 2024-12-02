@@ -1,0 +1,239 @@
+
+vs code
+spyder
+jupyter notebook
+pycharm
+eclipse
+
+
+anaconda package ( comes along with python)
+------------
+spyder IDE
+jupyter notebook
+
+
+
+python objects
+--------------------
+Everything in python is object
+Every object contains methods
+
+
+number
+------
+number can be integer or decimal or hexa or octal.
+
+val = 10
+aval = 34.3
+
+
+string
+------
+string is defined in single or double or triple quotes.
+
+name = 'python programming'
+aname = "java programming"
+bname = """r programming"""
+
+
+list ( array in C )
+-----
+list contains set of elements.
+Elements can be set of numbers or strings or any combination.
+
+alist = [10,20,30,40,50]
+blist = [34,"unix","oracle",34.34,[40,50],(34,12)]
+
+
+
+tuple ( immutable , read only , uneditable , unchangeable)
+------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination.
+** Elements inside tuple cannot be modified directly **
+
+atup = (30,40,50,40)
+btup = (45,43,"java",34,(34,32))
+
+
+empdb = [["ram",30],["rita",23] ] # list of lists
+empdb = [("ram",30),("rita",23) ] # list of tuples
+
+
+dictionary ( json , associative array , hash , hashmap)
+-----------
+- all about keys and values.
+- indexing is NOT allowing in dictionary
+- with help of key we access value.
+- key can be number or string used to access value
+- value can be number or string or list or tuple or dictionary or any complex data structure
+- dictionaries are really complex in production
+
+syntax:  
+object = { key:value , key:value , key:value}
+
+example:
+book   = {"chap1":10 ,"chap2":20 ,"chap3":30}
+data   = {1:2,3:4,5:6}
+book   = {"chap1":["rita","UK"] ,"chap2":["rao","IND"]}
+
+Index
+------
+chap1 10
+chap2 20
+chap3 30
+----- --
+key   value
+
+
+
+set
+-----
+set is unordered collection of unique elements of same type.
+
+aset = {10,20,30,30,30,30,30,30,30}
+bset = {30,40,50}
+
+
+
+
+
+
+
+
+
+
+datatypes in c
+--------------
+int a = 10;
+float b = 34.43;
+char
+double
+long
+short
+
+conditions
+------------
+if condition
+if-else condition
+if-elif-elif-elif..else condition
+
+
+control statements
+-----------------
+for
+while
+
+
+
+
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+level1
+level1
+
+
+dictionary
+set
+builtin functions
+user defined functions
+exammples/usecases
+lambda,map,filter
+
+
+
+function | definition | block | subroutine
+---------------------------------------------
+- builtin function
+- user defined functions
+
+
+builtin functions
+-----------------
+
+dir(__builtins__)
+
+
+print()
+range()
+len()
+type()
+input()
+max()
+min()
+sum()
+dir()
+help()
+isinstance()
+
+str()
+int()
+float()
+oct()
+list()
+tuple()
+dict()
+set()
+
+user defined functions ( def keyword)
+--------------------
+- reusable purpose
+- we defined the block once and call it for multiple times.
+
+
+fixed arguments
+default arguments
+variable lengh arguments
+
+
+
+# every OS contains set of processes
+# every process contains system calls
+
+
+c language - headerfiles
+--------------
+
+
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<string.h>
+#include<graphics.h>
+#include<stdmanip.h>
+
+
+python  - library , package 
+-----------------------------
+www.pypi.org
+
+libraries for network, n/w autonation , testing, server , secure copy, analytics
+              ML, DL, gen ai , web development, web scraping , excel
+
+
+
+
+working on any task =  core python(procedural or object oriented) + good knownledge of libraries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
