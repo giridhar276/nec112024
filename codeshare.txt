@@ -1,0 +1,994 @@
+
+
+cheatsheets:
+https://assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf
+https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
+https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf
+
+
+
+https://github.com/giridhar276/nec112024/raw/refs/heads/main/hr_analytics.zip
+
+
+
+https://github.com/giridhar276/nec112024/raw/refs/heads/main/pandas_assignment.zip
+
+
+https://github.com/giridhar276/nec112024
+
+https://cloud4.rpsconsulting.in/console/#/
+
+I Venkatalakshmi	24SHU3800_U12
+
+
+password:  Welcome@1
+
+
+name = "python programming"
+print(name)
+print("I love",name)
+
+#p   y   t   h   o    n     p    r    o   g  r  a   m   m  i    n    g
+#0   1    2     3   4    5  6   7    8  
+#                                               -6   -5  -4 -3   -2   -1
+# slicing
+#string[start:stop:step]
+print(name[4])
+print(name[14])
+print(name[0:4])
+print(name[0:4:2])  #pt
+print(name[9:11])
+print(name[9:11:1])
+print(name[0:18:2])
+print(name[9:16:4])
+print(name[::])   # from beginning to ending with step 1
+print(name[:])
+print(name[-1])
+print(name[-2])
+print(name[-6:-3])
+print(name[::-1])
+
+# string is immutable  # unchangeable
+name = "python programming"
+#name = name.upper()  # to make the changes permanent
+print(name)
+print(name.capitalize())
+print(name.title())
+print(name.center(40))
+print(name.center(40,"*"))
+print(name.count("P"))
+print(name.count("p"))
+print(name.count("P".lower()))
+print(name.replace("python","java"))
+print(name)  # original string remains same as it is .
+output = name.split(" ")
+print(output)
+print(name.startswith("p"))
+print(name.startswith("P"))
+aname = "  python    "
+print(len(aname))
+print(len(aname.strip())) # remove whitespaces at both the ends
+print(len(aname.lstrip()))# only at the left side
+print(len(aname.rstrip())) # only at right side
+print(name.isupper())
+print(name.islower())
+print(name.isalpha())
+print(name.index('y'))
+print(name.find("ing"))
+print(name.find("abc"))
+
+
+
+
+if name.isupper():
+    print("sstring is upper")
+
+# simpel if
+if name.startswith("p"):
+    print("Its python programing")
+
+# if-else
+if name.startswith("p"):
+    print("Its python programing")
+else:
+    print("java programming")
+
+# if-elif-elif-elif-else
+if name.startswith("p"):
+    print("Its python programing")
+elif name.startswith("j"):
+    print("java programming")
+elif name.startswith("r"):
+    print("ruby programming")
+else:
+    print("Its someother language")
+    
+    
+    
+    
+    
+    
+
+
+# range(start,stop,step)
+for i in range(1,11): # excluding 11
+    print(i)
+
+for i in range(2,10,2): # excluding 11
+    print(i)
+
+for val in range(1,10,2):
+    print(val)
+
+name = "python"
+for char in name :
+    print(char)
+
+  alist = [10,20,30,40]
+  for val in alist:
+      print(val)
+
+  for val in alist[::-1]:
+      print(val)
+    
+    
+    
+
+
+
+alist = [45,67,12,83,78,82]
+# slicing
+print(alist[0:5])
+# methods
+print(alist)
+alist.append(100)
+print("After appending :",alist)
+
+alist.extend([51,45,19,95])
+print("After extending :",alist)
+
+alist.insert(1,25)  # list.insert(index,value)
+print("After inserting :",alist)
+
+alist.pop(3) #12 will be removed from index 3
+print("After pop :",alist)
+
+alist.remove(100) # 100 will be removed
+print("After remove :",alist)
+
+alist.reverse()
+print("Reversing list :",alist)
+
+alist.sort()
+print("sorting in ascending order:",alist)
+
+alist.sort(reverse=True)
+print("descending order:",alist)
+
+
+print("count of 45:",alist.count(45))
+
+
+
+remove_list = [45,56,43,45]
+for val in remove_list:
+    if val in alist:
+        alist.remove(val)
+    
+    
+    
+    
+alist = [10,20,30,40,50]
+if 100 in alist:
+    alist.remove(100)
+    print(alist)
+
+
+for val in alist:
+    print(val)
+
+
+#display list in reverse order
+for val in alist[::-1]:
+    print(val)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+book = {"chap1":10 ,"chap2":20,"chap3":30}
+
+print(book)
+print(book["chap1"])
+
+# creating new key value
+book["chap4"] = 40
+book["chap5"] = 50
+print(book)
+
+#methods
+print(book.keys())  # display keys
+
+for key in book.keys():
+    print(key)
+
+# display values
+print(book.values()) # display values
+
+for value in book.values():
+    print(value)
+
+# display key-values
+print(book.items())
+
+for key,value in book.items():
+    print(key,value)
+
+# remove key-value
+book.pop("chap1")
+print("After pop :",book)
+
+book.popitem()
+print("After popitem",book)
+
+print(book.get("chap10")) # if not  existing it returns None ... safer side
+
+if "chap10" in book:
+    print(book["chap10"])
+else:
+    print("key doesnt exist")
+
+
+newbook = {"chap11":110,"chap12":120}
+#method1
+book.update(newbook)
+print(book) #book is getting updated
+#method2
+finalbook ={book,newbook}
+print(finalbook)
+
+
+
+
+
+
+
+
+
+
+data = {
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+print(type(data))
+
+#Standard Generalized Markup Language
+print()
+
+#XML
+print()
+
+
+
+
+
+
+
+data = {
+    'Sales': {
+        'North': {
+            'Alice': 'Manager',
+            'Bob': 'Sales Executive',
+            'Eve': 'Sales Coordinator',
+            'John': 'Account Manager'
+        },
+        'South': {
+            'Charlie': 'Sales Executive',
+            'Grace': 'Regional Sales Manager',
+            'Mallory': 'Business Development Associate'
+        },
+        'West': {
+            'Oscar': 'Sales Executive',
+            'Peggy': 'Account Executive',
+            'Victor': 'Territory Sales Manager'
+        }
+    },
+    'Marketing': {
+        'Digital': {
+            'David': 'SEO Specialist',
+            'Hannah': 'Content Strategist',
+            'Irene': 'Social Media Manager'
+        },
+        'Offline': {
+            'Eve': 'Event Coordinator',
+            'Jake': 'Brand Manager',
+            'Liam': 'Public Relations Specialist'
+        },
+        'Research': {
+            'Mia': 'Market Research Analyst',
+            'Noah': 'Customer Insights Manager'
+        }
+    },
+    'IT': {
+        'Infrastructure': {
+            'Quinn': 'Network Engineer',
+            'Riley': 'System Administrator',
+            'Sam': 'Cloud Architect'
+        },
+        'Development': {
+            'Tina': 'Software Engineer',
+            'Uma': 'Backend Developer',
+            'Walter': 'Full Stack Developer'
+        }
+    },
+    'HR': {
+        'Recruitment': {
+            'Yara': 'Recruitment Specialist',
+            'Zane': 'Talent Acquisition Manager',
+            'Nina': 'HR Coordinator'
+        },
+        'Employee Relations': {
+            'Oliver': 'Employee Relations Specialist',
+            'Sophia': 'HR Business Partner'
+        }
+    },
+    'Finance': {
+        'Accounting': {
+            'Xander': 'Accountant',
+            'Yvette': 'Accounts Payable Specialist',
+            'Zara': 'Financial Analyst'
+        },
+        'Audit': {
+            'Luna': 'Internal Auditor',
+            'Mason': 'Compliance Officer'
+        }
+    }
+}
+
+
+write a program to display the below output:
+
+
+Sales
+-----
+North
+South
+West
+
+
+Marketing
+--------
+Digital
+Offline
+Research
+
+
+IT
+---
+Infrasturcture
+Development
+
+HR
+---
+Recruitment
+Employee Relations
+
+
+
+output;
+
+for key in data:
+    print(key)
+    print("------")
+
+    for ikey in data[key]:
+        print(ikey)
+    print()
+
+
+
+
+
+write a program to display the sum of salaries in each department
+
+data = {
+    'HR': {
+        'Alice': {'age': 30, 'salary': 50000, 'role': 'Manager', 'years_in_role': 6},
+        'Bob': {'age': 25, 'salary': 40000, 'role': 'Recruiter', 'years_in_role': 3}
+    },
+    'IT': {
+        'Charlie': {'age': 35, 'salary': 70000, 'role': 'Developer', 'years_in_role': 8},
+        'David': {'age': 28, 'salary': 65000, 'role': 'Analyst', 'years_in_role': 2}
+    }
+}
+
+
+
+expected output:
+
+HR 
+----
+total sum of salaries : 90000
+
+
+IT
+-----
+total sum of salaries : 135000
+
+
+
+for key,value in data.items():
+    salary = 0
+    for emp,details in value.items():
+        #print(emp,details)
+        salary = salary + details['salary']
+    
+    print(key)
+    print("----")
+    print("total sum of salaries :",salary)
+
+
+
+
+
+
+print(list(range(1,10)))  # range()
+
+val = 10
+print(type(val))
+print(isinstance(10,int))
+print(isinstance(10,float))
+alist = [10,20,30]
+print(type(alist))
+print(isinstance(alist,list))
+print(isinstance(alist,tuple))
+
+
+name = input("Enter any name :")
+print("you entered :",name)
+
+print(max(alist))
+print(min(alist))
+print(sum(alist))
+
+atup = (10,20,30)
+alist = list(atup)
+alist.append(40)
+atup = tuple(alist)
+print("Afte changes :",atup)
+
+
+
+
+
+
+
+
+
+
+#fixed arguments
+def display(a,b):
+    c = a + b
+    return c
+total = display(10,20)
+print(total)
+
+# default arguments
+def display(a = 0,b =0 ,c = 0,d = 0):
+    print(a,b,c,d)
+display()
+display(10)
+display(10,20)
+display(10,20,30)
+display(10,20,30,40)
+
+# if any object starts with * , it is treated as tuple
+def display(*args):
+    for val in args:
+        print(val)
+    print("Sum :",sum(args))
+display(10,20,30,40,7,543,67,54,67,43,56,3,5,67,54,678,43,5643,4,56,43,65,1)
+
+def displaydata(**kwargs):
+    for key,value in kwargs.items():
+        print(key,value)
+displaydata(chap1 = 10 ,chap2 =20)
+
+
+
+
+
+
+
+
+# lambda is replacment of single liner function
+# Instead of writing function body , we simply define lambda function
+#syntax
+#functioname = lambda variables:expression
+# the expression will be replaced in the caling function
+
+display = lambda x,y: x + y
+total = display(10,20)
+print(total)
+
+square = lambda x: x**2
+print(square(5))
+
+
+checkgreatest = lambda x,y : x if x >y else y
+print(checkgreatest(10,15))
+
+
+checkeligible = lambda age : "Eligible" if age >=18 else "Not eligble"
+print(checkeligible(20))
+print(checkeligible(12))
+
+
+
+
+
+
+
+# when to use map() ?  If you are looking for updating list then use map()
+alist = [10,15,20]
+
+#output
+[15,20,25]
+#method1
+blist =[]
+for val in alist:
+    blist.append(val + 5)
+print(blist)
+
+
+#method2
+#map(function,iterable)
+alist = [10,15,20]
+def increment(x):
+    return x + 5
+print(list(map(increment,alist)))
+
+
+print(list(map(lambda x : x+5,alist)))
+
+
+data = ["python","unix","java"]
+print(list(map(lambda x: x + " programming", data)))
+
+
+
+
+# few more examples
+
+Square Numbers
+nums = [1, 2, 3, 4, 5]
+squares = list(map(lambda x: x ** 2, nums))
+print(squares)  # Output: [1, 4, 9, 16, 25]
+
+
+
+
+
+Check Even or Odd
+nums = [1, 2, 3, 4, 5]
+even_or_odd = list(map(lambda x: "Even" if x % 2 == 0 else "Odd", nums))
+print(even_or_odd)  # Output: ['Odd', 'Even', 'Odd', 'Even', 'Odd']
+
+
+
+#Add Two Lists Element-wise
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+sums = list(map(lambda x, y: x + y, list1, list2))
+print(sums)  # Output: [5, 7, 9]
+
+
+
+#Capitalize Strings
+words = ['hello', 'world', 'python']
+capitalized = list(map(lambda x: x.capitalize(), words))
+print(capitalized)  # Output: ['Hello', 'World', 'Python']
+
+
+
+
+
+
+
+
+
+#########################################################################################################
+
+Write a script that lists all files and directories in the current working directory line by line.
+
+
+import os
+try:
+    for file in os.listdir():
+        print(file)
+
+except Exception as err:
+    print(err)
+    
+    
+    
+    
+import os
+try:
+    for file in os.listdir():
+        print(file)
+except TypeError as err:
+    print("Invalid operation :",err)
+except FileNotFoundError as err:
+    print("File doesnt exist",err)
+except Exception as err:  # default exception
+    print(err)
+
+#########################################################################################################
+
+Create a new directory called "test_directory". After creating it, remove the directory.
+
+
+import os
+
+dirname = "temp_directory"
+if not os.path.isdir(dirname):
+    os.mkdir(dirname)
+os.rmdir(dirname)
+
+#########################################################################################################
+
+write a script to create 10 directories in the current directory as below.
+
+dir1
+dir2
+dir3
+dir4
+..
+..
+dir10
+
+
+import os
+for val in range(1,11):
+    dirname = "dir" + str(val)
+    os.mkdir(dirname)
+
+
+for val in range(110,120):
+    dirpath = "C:\\Users\\Administrator\\Desktop\\programs\\" + "dir" + str(val)
+    os.mkdir(dirpath)
+
+
+
+#########################################################################################################
+
+
+write a script to perform the below operations :
+
+1. display current working directory
+2. display login name
+3. display all environment variables
+4. display today's date ( timestamp )
+5. display sep months calendar
+6. display all .py files and its size in bytes
+7. display the modified time of employees.csv file
+8. display current process id
+9. set an environment variables. ( Eg.    TEST_PATH = "C:/Users/Admin/")
+10. Lock and unlock a file using os.open and os.close
+11. Retrieve the current system's load average.
+12. display python version
+
+
+
+
+import os
+import time
+import datetime,dateutil,pytz
+import calendar
+import sys
+import sysconfig
+
+print(os.getcwd())
+
+os.chdir("/Users/giridharsripathi/Documents/training")
+
+print(os.getcwd())
+
+#os.chdir("/Users/giridharsripathi/Documents/training/boa/programs")
+
+# display login
+print(os.getlogin())
+
+# display all env varaibles
+#print(os.environ)
+
+for key,value in os.environ.items():
+    print(key)
+    print(value)
+    print("-------------------")
+
+# display todays timestamp
+print(time.localtime())
+print(datetime.datetime.now())
+print(datetime.date.today())
+print(time.time())
+
+print(datetime.datetime.fromtimestamp(time.time()))
+
+# calendar operations
+print(calendar.calendar(2024))
+print(calendar.month(2024,9))
+
+# display files and its size
+for file in os.listdir():
+    print(file.ljust(20),os.path.getsize(file),"bytes")
+
+
+# display  modified time of thefile
+filename ="employees.csv"
+
+modifiedtime = os.path.getmtime(filename)
+print(modifiedtime)
+print(datetime.datetime.fromtimestamp(modifiedtime))
+
+# display process id
+print(os.getpid())
+
+
+# creating env varabile
+os.environ["MY_ENV_VAR"] = "test"
+
+for key,value in os.environ.items():
+    print(key)
+    print(value)
+    print("-------------------")
+
+
+
+# lock and unlock a file
+import os
+descriptor = os.open("employees.csv",os.O_RDWR)
+## file operations
+os.close(descriptor)
+
+
+# system load avg
+print(os.getloadavg())
+
+
+
+# python version
+print(sys.version)
+print(sys.version_info)
+print(sysconfig.get_python_version())
+
+
+
+
+
+
+
+#########################################################################################################
+
+
+write a script to display the below information ( psutil library)
+
+1. CPU Usage
+2. Memory info ( total memory, available, used)
+3. process info
+4. disk partitions
+5. network statistics
+
+
+#########################################################################################################
+
+
+
+write a program to read https://www.bankofamerica.com/  webpage and display all the URLs listed in the home page.
+
+Output:
+https://www.bankofamerica.com/#
+https://www.bankofamerica.com/smallbusiness
+https://www.ml.com/wealthmanagement.html
+https://www.bankofamerica.com/credit-cards/
+..
+..
+..
+-
+
+
+
+
+
+
+################################### frequently used builtin libraries #############################
+
+os         : os level activities
+math       : mathematical operations
+sys        :  sys and python config data
+shutil     : copy,move, rmtree  etc
+urllib     : read the web, downloading the files
+logging    : logging all the events
+smtplib    : sending the mails
+ftplib     : performing ftp operations
+sysconfig  :  sys and python config data
+zipfile    : create/extract the zip files
+rarfile    : create/extract the rar files
+cryptopgraphy : encrypting and decrypting the data or files
+tarfile    : create/extract the tar files
+filecmp    : comparing files or directories
+sqlite3    : python default database
+csv        : reading/writing csv files
+xml        : reading/writing xml files
+calendar   : display month,year calendar info
+datetime   : working with date n time
+time       : working with date n time
+fractions  : working with decimal values
+glob       : display all the files
+heapq      : more of array operations ( getting largest among list )
+subprocess : executing system commands in python (  subprocess.getoutput("ls -ltr")
+pdb        : python debugger
+platform   : platform information
+random     : random operations ( shuffling , random digit ... )
+re         : grep + awk + sed
+socket     : networking programming
+stat       : stats of the file
+statistics : basic statistics
+telnetlib  : accessing remote servers 
+
+#################################################################################################
+
+
+
+
+
+step4
+
+#clean the item_price and transform to float
+prices = [  float(value[1:])    for value in chipo['item_price']]  # remove $ from each value of item_price
+prices
+
+chipo['item_price'] = prices
+
+chipo_filtered = chipo.drop_duplicates(["item_name","quantity","choice_description"])
+
+chipo_product = chipo_filtered[chipo_filtered.quantity == 1  ]
+
+
+chipo_product[chipo_product['item_price'] > 10]
+
+
+
+
+
+step5
+
+# delete duplixcates
+chipo_filtered = chipo.drop_duplicates(['item_name','quantity'])
+
+# select only the products with quantity equals to 1
+chipo_one_prod = chipo_filtered[chipo_filtered['quantity'] == 1]
+
+
+price_per_item = chipo_one_prod[['item_name','item_price']]
+
+price_per_item.sort_values( by = 'item_price', ascending=False)
+
+
+
+
+step6
+chipo['item_name'].sort_values()
+
+
+
+step7
+
+chipo.sort_values(by = "item_price", ascending = False).head(1)
+
+
+step8
+cond = chipo['item_name'] == "Veggie Salad Bowl"
+len(chipo[cond])
+
+
+
+step9
+cond1 =  chipo['item_name'] == "Canned Soda"
+cond2 =  chipo['quantity'] > 1
+
+
+len(chipo[ cond1 & cond2])
+
+
+s
+
+
+grouping
+-------------
+
+
+step5:
+
+def myfunction(x):
+    if x == 'M':
+        return 1
+    if x == 'F':
+        return 0
+
+users['gender_numeric'] = users['gender'].apply(myfunction)
+users
+
+
+output = users.groupby('occupation')['gender_numeric'].sum()/users['occupation'].value_counts() * 100
+
+output.sort_values(ascending= False)
+
+
+
+step6 
+users.groupby('occupation')['age'].agg(['min','max'])
+
+
+
+titanic
+----------
+
+
+step5
+-----
+males = (titanic['Sex'] == 'male').sum()
+females = (titanic['Sex'] == 'female').sum()
+
+gendercount = [males,females]
+gendercount
+
+
+plt.pie(gendercount,labels = ["Males","females"], shadow=True, startangle=90,explode=(0.10,0), 
+        colors = ['orange','blue'],autopct="%1.1f%%")
+
+
+plt.savefig("output.jpg")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

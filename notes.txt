@@ -190,7 +190,7 @@ fixed arguments
 default arguments
 variable lengh arguments
 
-
+*,**
 
 # every OS contains set of processes
 # every process contains system calls
@@ -209,7 +209,7 @@ c language - headerfiles
 #include<stdmanip.h>
 
 
-python  - library , package 
+python  - library , package  modules
 -----------------------------
 www.pypi.org
 
@@ -237,3 +237,47 @@ working on any task =  core python(procedural or object oriented) + good knownle
 
 
 
+core programming
+----------------
+- procedural programming
+- object oriented programming
+
+
+task = core programming + sound knowledge on libraries
+
+
+
+exception handling
+---------------------
+
+try   : we write our code in try block
+except: If something went wrong in try block.. control comes to except block so that program doesnt get terminated
+
+
+
+statistics
+
+what is ML,DL,gen ai , NLP
+different types of algorithms
+- supervised algorithms
+     regression algorithms
+     ----------------
+     linear regression algorithm
+     polynomial 
+     RFRegression
+     classification algorithms
+     -------------------------
+     logistics
+     kNN 
+     random forest
+     decision forest
+- unsupervised algorithms
+
+
+
+
+
+
+###############################################
+PEP8 recommendations : style guide of python
+###############################################
